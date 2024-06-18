@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diploma Updates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+        }
+
+        .container {
+            max-width:800px;
+             margin: 100px auto;
+             padding: 20px;
+             border: 1px solid #ccc;
+             border-radius: 10px;
+             background-color: #8AA899;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Diploma Programs Updates</h1>
+        <form id="degree-form">
+            <div class="form-group">
+                <label for="category">Select Category:</label>
+                <select id="category" name="category" required>
+                    <option value="health">Health</option>
+                    <option value="arts">Arts</option>
+                    <option value="business">Business</option>
+                    <option value="engineering">Engineering</option>
+                    
+                    
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Diploma-name">New Diploma Program:</label>
+                <input type="text" id="Combination" name="Combination" required>
+            </div>
+
+            <div class="form-group">
+                <label for="program-description">Diploma Description :</label>
+                <textarea id="program-description" name="program-description" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="requirements"> Diploma Requirements:</label>
+                <textarea id="requirements" name="requirements" required></textarea>
+            </div>
+
+            <button type="submit">update</button>
+        </form>
+    </div>
+</body>
+</html>

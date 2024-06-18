@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+
+}
+
+.menu {
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+
+}
+
+.navbar {
+  color: white;
+  font-size: 25px;
+}
+
+.navbar span {
+  color: #0073ff;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.menu ul li a:hover {
+  color: blue;
+
+}
+
+.dropdown {
+  display: none;
+}
+
+.menu ul li:hover .dropdown {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: black;
+  z-index: 1;
+}
+
+.menu ul li:hover .dropdown ul {
+  display: block;
+  margin: 10px;
+  z-index: 2;
+}
+
+.menu ul li:hover .dropdown ul li {
+  width: 230px;
+  padding: 20px;
+  z-index: 3;
+}
+
+.fas {
+  margin-left: 10px;
+  padding-top: 3px;
+
+
+}
+
+.pics {
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 105%;
+  height: 800px;
+  background-color: black;
+  margin-left: -10px;
+  background-image: url(./assets/pch3.jpg);
+  background-size: cover;
+  background-position-y: -150px;
+  margin-right: -10px;
+}
+
+
+.picture-text {
+  position: absolute;
+  top: 40%;
+  left: 100px;
+  transform: translate(0, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  max-width: 500px;
+  height: 500px;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Add these styles to your existing CSS */
+.dashboard {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.274);
+  width: 250px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.812);
+  backdrop-filter: blur(10px);
+  color: white;
+  z-index: 2;
+  transition: left 0.4s;
+
+}
+
+.dashboard a {
+  text-decoration: none;
+  color: white;
+
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 8px;
+  position: absolute;
+  transition: .5s ease-in-out;
+  left: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.hamburger i {
+  font-size: x-large;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  /* Color of the bars */
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Styles for the "X" shape when the menu is open */
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.title {
+  padding: 10px;
+  min-height: 30px;
+  padding: 10px;
+  background-color: white;
+}
+.title h1{
+  padding: 10px;
+  min-height: 30px;
+  background-color: white;
+  color: black !important;
+  text-align: center;
+}
+.dashboard li{
+  list-style: none;
+  margin: 13px;
+  cursor: pointer;
+}
+ .icon_rotate{
+  position: absolute;
+  transform: rotate(0deg);
+  transition: .3s ease-in-out;
+}
+
+li:hover .icon_rotate{
+  position: absolute;
+  transition: .3s ease-in-out;
+  transform: rotate(90deg);
+}
+.dropping{
+  padding: 10px;
+}
+.dropping ul li a{
+  font-size: small;
+  color: gray !important;
+  
+}
+.dropping:hover ul{
+  display: block !important;
+  height:auto;
+  overflow: hidden;
+  animation: top_top 1.3s ease-in-out;
+}
+@keyframes top_top {
+   0%{
+    height: 0px;
+   }
+   50%{
+    height: 60px;
+   }
+   100%{
+    height: auto;
+   }
+}

@@ -1,0 +1,67 @@
+:root{
+    --black:black;
+    --primary:rgb(255, 255, 255);
+    --orange:rgb(255, 157, 0);
+    --gray:rgb(216, 216, 216);
+    --green:rgb(20, 71, 82);
+}
+nav{
+    position: fixed;
+    background-color: var(--orange);
+    width: 100%;
+    top: 0px;
+    z-index: 4;
+    left: 0px;
+    display: flex;
+}
+nav .image{
+    width: 60px !important;
+    height: 50px !important;
+    margin: 10px;
+    margin-left: 100px;
+    overflow: hidden;
+    border-radius: 50px;
+
+}
+.logobrand{
+    min-width: 200px;
+    margin-left: 100px;
+}
+img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+nav .menus{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-right: 100px;
+}
+nav ul{
+    display: flex;
+    position: relative;
+}
+nav ul > * {
+    padding: 10px;
+    list-style: none;
+}
+
+nav ul > * a {
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--black);
+    border-radius: 50px;
+}

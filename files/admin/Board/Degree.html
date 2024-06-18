@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Degree Updates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+        }
+
+        .container {
+            max-width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #8AA899;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Degree Programs Updates</h1>
+        <form id="degree-form">
+            <div class="form-group">
+                <label for="category">Select Category:</label>
+                <select id="category" name="category" required>
+                    <option value="health">Health</option>
+                    <option value="arts">Arts</option>
+                    <option value="business">Business</option>
+                    <option value="engineering">Engineering</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Combination">New Degree Program:</label>
+                <input type="text" id="Combination" name="Combination" required>
+            </div>
+
+            <div class="form-group">
+                <label for="program-description">Degree Description:</label>
+                <textarea id="program-description" name="program-description" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="requirements">Degree Requirements:</label>
+                <textarea id="requirements" name="requirements" required></textarea>
+            </div>
+
+            <button type="submit">Update</button>
+        </form>
+    </div>
+</body>
+</html>
